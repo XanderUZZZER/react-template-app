@@ -1,0 +1,19 @@
+:root {
+  --background-primary-color: yellow;
+  --text-primary-color: green;
+}
+
+.light {
+  --background-primary-color: yellow;
+  --text-primary-color: green;
+}
+
+.dark {
+  --background-primary-color: red;
+  --text-primary-color: blue;
+}
+
+body {
+  background-color: var(--background-primary-color);
+  color: var(--text-primary-color);
+}
