@@ -1,7 +1,8 @@
-import { TOGGLE_THEME } from '../constants/themeConstants';
+import { THEME_TOGGLE } from '../constants/themeConstants';
 
-export const toggleTheme = () => (dispatch, getState) => {
+export const themeToggle = () => (dispatch, getState) => {
   let { theme } = getState()
-  localStorage.setItem('theme', theme.value)
-  dispatch({ type: TOGGLE_THEME })
+  let newTheme = theme.currentTheme === 'light' ? 'dark' : 'light'
+  localStorage.setItem('theme', newTheme)
+  dispatch({ type: THEME_TOGGLE, payload: newTheme })
 }

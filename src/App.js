@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux'
-import { toggleTheme } from './actions/themeActions'
-import ThemeProvider from './components/ThemeProvider'
+import { themeToggle } from './actions/themeActions'
+import ThemeProvider from './HOCs/ThemeProvider'
 
 function App() {
   const dispatch = useDispatch()
@@ -9,7 +9,7 @@ function App() {
     <ThemeProvider>
       <div>
         <h2>App</h2>
-        <button onClick={() => dispatch(toggleTheme())}>Toggle theme</button>
+        <button onClick={() => dispatch(themeToggle())}>Toggle theme</button>
       </div>
     </ThemeProvider>
   );
