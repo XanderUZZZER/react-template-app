@@ -11,30 +11,6 @@
   --blue: blue;
 }
 
-.light {
-  --background-primary-color: yellow;
-  --text-primary-color: green;
-  --temp-color: pink;
-
-  --red: #fb4659;
-  --green: #02b64a;
-
-  --pink: pink;
-  --blue: blue;
-}
-
-.dark {
-  --background-primary-color: red;
-  --text-primary-color: blue;
-  --temp-color: pink;
-
-  --red: #fb4659;
-  --green: #02b64a;
-
-  --pink: pink;
-  --blue: blue;
-}
-
 body {
   background-color: var(--background-primary-color);
   color: var(--text-primary-color);

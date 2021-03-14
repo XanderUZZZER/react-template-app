@@ -1,13 +1,13 @@
-import { TOGGLE_THEME } from '../constants/themeConstants';
+import { THEME_TOGGLE } from '../constants/themeConstants';
 
 const initialState = {
-  value: 'light'
+  currentTheme: 'light'
 }
 
 export const themeReducer = (state = initialState, action) => {
   switch (action.type) {
-    case TOGGLE_THEME:
-      return { ...state, value: state.value === 'light' ? 'dark' : 'light' }
+    case THEME_TOGGLE:
+      return { ...state, currentTheme: action.payload }
     default:
       return state
   }

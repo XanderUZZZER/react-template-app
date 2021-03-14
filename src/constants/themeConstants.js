@@ -1,1 +1,1 @@
-export const TOGGLE_THEME = 'TOGGLE_THEME'
+export const THEME_TOGGLE = 'THEME_TOGGLE'

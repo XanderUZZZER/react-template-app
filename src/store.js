@@ -15,7 +15,7 @@ const themeFromStorage = localStorage.getItem('theme')
 
 const initialState = {
   theme: {
-    value: themeFromStorage
+    currentTheme: themeFromStorage
   }
 }
 
